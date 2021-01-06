@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-ENV TERRAFORM_VERSION=0.10.0
+ENV TERRAFORM_VERSION=0.14.3
 
 RUN apk add --update git bash openssh make
 
