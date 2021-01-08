@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     mysql = {
-      source  = "terraform-providers/libvirt"
+      source  = "terraform-providers/mysql"
       version = "~> 1.6"
     }
   }
@@ -9,7 +9,7 @@ terraform {
 
 
 provider "mysql" {
-  endpoint = "localhost:3306"
+  endpoint = "54.82.49.98:3306"
   username = "root"
   password = "root@123"
 }
@@ -21,7 +21,7 @@ resource "mysql_database" "terra_db" {
 
 resource "mysql_user" "db_user" {
   user = "rajnikant"
-  host               = "localhost"
+  host               = "54.82.49.98"
   plaintext_password = "password123"
 }
 
